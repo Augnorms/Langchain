@@ -1,0 +1,21 @@
+﻿Name,Age,Gender,Test Score,Percentages,City,Status
+Shehroz,24,Female,50,68.9,Quetta,Rejected
+Waqar,21,Female,99,60.73,Karachi,Unknown
+Bushra,17,Male,89,0,Islamabad,Accepted
+Aliya,17,Male,55,85.29,Karachi,Rejected
+Bilal,20,Male,65,61.13,Lahore,Unknown
+Murtaza,23,Female,0,0,Islamabad,Accepted
+Asad,18,Male,0,97.31,Multan,Accepted
+Rabia,20,Female,82,55.67,Lahore,Accepted
+Rohail,17,Male,64,0,Karachi,Accepted
+Kamran,18,Male,53,98.98,Multan,Rejected
+Shafiq,17,Male,78,-10,Quetta,Rejected
+Nashit,18,Male,89,0,Lahore,Accepted
+Unknown,19,Male,66,88.17,Unknown,Unknown
+Ahmed,21,Male,62,79.03,Karachi,Accepted
+Fareeha,22,Male,86,50.77,Islamabad,Rejected
+Saim,19,Male,84,97.19,Peshawar,Rejected
+Mahnoor,0,Male,61,74.08,Islamabad,Rejected
+Uzma,17,Female,96,93.34,Karachi,Rejected
+Maryam,19,Female,74,70.26,Lahore,Accepted
+Unknown,19,Male,84,0,Islamabad,Rejected
