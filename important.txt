@@ -1,0 +1,28 @@
+from google import genai
+from google.genai import types
+import os
+from langchain_google_genai import ChatGoogleGenerativeAI
+
+# Set your API key
+api_key = os.getenv("GEMINI_API_KEY")
+
+
+
+def querydatabase_ai():
+    # Initialize Google Generative AI with API key
+   
+    client = genai.Client(api_key=api_key)
+    
+    # Example query execution
+    response = client.models.generate_content(model='gemini-2.0-flash', contents='Explain how AI works')
+
+    print(response.text)
+
+----------------------------------
+
+    llm = ChatGoogleGenerativeAI(
+        model="gemini-1.5-flash",
+        temperature=0,
+        max_retries=2,
+        google_api_key=os.getenv("GOOGLEAPI"),  # From .env file  
+    )
