@@ -5,9 +5,12 @@ from langchain_ollama import OllamaLLM
 import os
 from dotenv import load_dotenv
 from langchain.prompts import PromptTemplate
+from openai import OpenAI
+from langchain_openai import AzureOpenAI
 
 # Load environment variables
 load_dotenv()
+
 
 api_key = os.getenv("GOOGLEAPI")
 db_user = os.getenv("DBUSER")
@@ -16,20 +19,18 @@ db_password = os.getenv("DBPASSWORD")
 db_name = os.getenv("DBNAME")
 
 # Custom prompt template
-TEMPLATE = """Given an input question, first create a syntactically correct {dialect} query. Execute the query and return the answer based on the result. 
+TEMPLATE = """Given an input question, first create a syntactically correct {dialect} query. Execute the query and return the answer based on the result.
 
 Follow this format:
 Question: {input}
-SQLQuery: SQL query to run
+SQLQuery: SELECT statement
 SQLResult: Result from the database
-Answer: Extract the value from SQLResult. Example: If SQLResult is [(Decimal('15'),)], 
-Answer: 15. Return "None" if no data.
+Answer: Extract the value from SQLResult. Return "None" if no data.
 
 Use the following tables:
 {table_info}
 
 Question: {input}
-
 """
 
 CUSTOM_PROMPT = PromptTemplate(
@@ -51,10 +52,20 @@ def querydatabase_ai():
     #     google_api_key=api_key
     # )
 
-    llm = OllamaLLM(model="phi3:mini") 
+    # llm = OllamaLLM(model="phi3:mini") 
+
+
+    # Initialize the Azure OpenAI LLM
+    llm = AzureOpenAI(
+        deployment_name="gpt-4o", 
+        api_key=os.environ["GITHUBAPI"],
+        azure_endpoint="https://models.inference.ai.azure.com",
+        api_version="2024-10-21"
+    )
+
 
     # Create SQLDatabaseChain
-    db_chain = SQLDatabaseChain.from_llm(llm, db, prompt=CUSTOM_PROMPT, verbose=False)
+    db_chain = SQLDatabaseChain.from_llm(llm, db, prompt=CUSTOM_PROMPT, verbose=True)
 
     # Execute query
     # query = "which of the brands has the most stock_quantity?"

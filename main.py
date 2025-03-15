@@ -3,6 +3,9 @@ from langchain_resturant_file import generate_restaurant_name_and_item
 from langchain_agent_file import agentic_model
 from langchain_vector_embedding_project import chunk_summarizer
 from Langchain_dbquery_project import querydatabase_ai
+from langchain_chat_model_starter import chat_model_starter
+from Langchain_model_conversational_history import chat_model_conversation_history
+from Langchain_model_alternatives import chat_model_alternatives
 
 #resturant code
 
@@ -50,4 +53,10 @@ from Langchain_dbquery_project import querydatabase_ai
 #     else:
 #         st.sidebar.error("Please provide at least one URL and enter a query.")
 
-querydatabase_ai()
+# querydatabase_ai()
+
+# chat_model_starter()
+
+# chat_model_conversation_history()
+
+chat_model_alternatives()

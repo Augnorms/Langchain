@@ -26,3 +26,39 @@ def querydatabase_ai():
         max_retries=2,
         google_api_key=os.getenv("GOOGLEAPI"),  # From .env file  
     )
+
+-----------------openai-github-marketplace------------------------- 
+client = OpenAI(
+    base_url="https://models.inference.ai.azure.com",
+    api_key=os.environ["GITHUBAPI"],
+)  
+
+response = client.chat.completions.create(
+    messages=[
+        {
+            "role": "user",
+            "content": "What is the capital of France?",
+        }
+    ],
+    model="gpt-4o",
+    temperature=1,
+    max_tokens=4096,
+    top_p=1
+)
+
+    # Initialize the Azure OpenAI LLM
+    llm = AzureOpenAI(
+        deployment_name="gpt-4o", 
+        api_key=os.environ["GITHUBAPI"],
+        azure_endpoint="https://models.inference.ai.azure.com",
+        api_version="2024-10-21"
+    )
+.................................................
+
+    llm = AzureChatOpenAI(
+        deployment_name="gpt-4o", 
+        api_key=os.environ["GITHUBAPI"],
+        azure_endpoint="https://models.inference.ai.azure.com",
+        api_version="2024-10-21",   
+        model="gpt-4o",  
+    )
