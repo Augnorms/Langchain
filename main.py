@@ -7,6 +7,10 @@ from langchain_chat_model_starter import chat_model_starter
 from Langchain_model_conversational_history import chat_model_conversation_history
 from Langchain_model_alternatives import chat_model_alternatives
 from langchain_conversational_with_chat_history import remembering_chat_conversation
+from langchain_prompt_template_starter import prompt_template_starter
+from langchain_chains import chaining_messages
+from langchain_chain_inner_workings import chaining_inner_workings
+from langchain_chains_realworld_sequencial_examples import chaining_real_world
 
 #resturant code
 
@@ -61,4 +65,8 @@ from langchain_conversational_with_chat_history import remembering_chat_conversa
 # chat_model_conversation_history()
 
 # chat_model_alternatives()
-remembering_chat_conversation()
+# remembering_chat_conversation()
+# prompt_template_starter()
+# chaining_messages()
+# chaining_inner_workings()
+chaining_real_world()
