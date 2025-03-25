@@ -33,6 +33,17 @@ def chat_model_alternatives():
     )
 
     llm_three = OllamaLLM(model="phi3:mini")
+    
+    # if messages:
+    #     gpt = llm_one.invoke(messages)
+    #     goolge = llm_two.invoke(messages)
+    #     ollama = llm_three.invoke(messages)
+        
+    #     print({
+    #         "gpt": gpt.content,
+    #         "google": goolge.content,
+    #         "ollame": ollama.content
+    #     })
 
     result = llm_one.invoke(messages)
 

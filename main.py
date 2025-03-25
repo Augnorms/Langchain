@@ -6,6 +6,7 @@ from Langchain_dbquery_project import querydatabase_ai
 from langchain_chat_model_starter import chat_model_starter
 from Langchain_model_conversational_history import chat_model_conversation_history
 from Langchain_model_alternatives import chat_model_alternatives
+from langchain_conversational_with_chat_history import remembering_chat_conversation
 
 #resturant code
 
@@ -59,4 +60,5 @@ from Langchain_model_alternatives import chat_model_alternatives
 
 # chat_model_conversation_history()
 
-chat_model_alternatives()
+# chat_model_alternatives()
+remembering_chat_conversation()
