@@ -10,7 +10,9 @@ from langchain_conversational_with_chat_history import remembering_chat_conversa
 from langchain_prompt_template_starter import prompt_template_starter
 from langchain_chains import chaining_messages
 from langchain_chain_inner_workings import chaining_inner_workings
-from langchain_chains_realworld_sequencial_examples import chaining_real_world
+from langchain_chains_realworld_sequencial_examples import chaining_real_world_sequencial
+from langchain_chains_realworld_parallel_example import chain_real_wolrd_parallel
+from langchain_chains_relaworld_conditional_example import chain_real_wolrd_considtional
 
 #resturant code
 
@@ -69,4 +71,6 @@ from langchain_chains_realworld_sequencial_examples import chaining_real_world
 # prompt_template_starter()
 # chaining_messages()
 # chaining_inner_workings()
-chaining_real_world()
+# chaining_real_world_sequencial()
+# chain_real_wolrd_parallel()
+chain_real_wolrd_considtional()

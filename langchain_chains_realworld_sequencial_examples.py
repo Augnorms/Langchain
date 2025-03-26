@@ -3,7 +3,7 @@ from langchain_ollama import OllamaLLM
 from langchain.schema.output_parser import StrOutputParser
 from langchain.schema.runnable import RunnableLambda
 
-def chaining_real_world():
+def chaining_real_world_sequencial():
     model = OllamaLLM(model="phi3:latest")
 
     animal_template = ChatPromptTemplate.from_messages(
