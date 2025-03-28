@@ -13,6 +13,8 @@ from langchain_chain_inner_workings import chaining_inner_workings
 from langchain_chains_realworld_sequencial_examples import chaining_real_world_sequencial
 from langchain_chains_realworld_parallel_example import chain_real_wolrd_parallel
 from langchain_chains_relaworld_conditional_example import chain_real_wolrd_considtional
+from langchain_Retrieval_augmented_gen import retrieval_augmented_gen
+from langchain_agent_101 import chain_agent
 
 #resturant code
 
@@ -73,4 +75,6 @@ from langchain_chains_relaworld_conditional_example import chain_real_wolrd_cons
 # chaining_inner_workings()
 # chaining_real_world_sequencial()
 # chain_real_wolrd_parallel()
-chain_real_wolrd_considtional()
+# chain_real_wolrd_considtional()
+# retrieval_augmented_gen()
+chain_agent()

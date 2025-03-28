@@ -64,7 +64,7 @@ def chain_real_wolrd_considtional():
 
     chain = classification_chain | branches
 
-    review = "The product is terrible. It broke after one use and the quality is very poor"
+    review = "The product is very good. I really enjoyed using it"
 
     result = chain.invoke({"feedback": review})
 

@@ -25,7 +25,7 @@ def analyse_character(character):
 def combine_parallel_analyser(plot_analyses, character_analysis):
     return f"Plot Analyses:\n{plot_analyses}\n\nCharacter Analyses:\n{character_analysis}"
 
-
+#main function
 def chain_real_wolrd_parallel():
     model = OllamaLLM(model="phi3:latest")
 
