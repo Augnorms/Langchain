@@ -15,6 +15,7 @@ from Langchain.langchain_chains_realworld_parallel_example import chain_real_wol
 from Langchain.langchain_chains_relaworld_conditional_example import chain_real_wolrd_considtional
 from Langchain.langchain_Retrieval_augmented_gen import retrieval_augmented_gen
 from Langchain.langchain_agent_101 import chain_agent
+from Langraph.Basic_reflection_system import basic_reflection
 
 #resturant code
 
@@ -62,12 +63,10 @@ from Langchain.langchain_agent_101 import chain_agent
 #     else:
 #         st.sidebar.error("Please provide at least one URL and enter a query.")
 
+
 # querydatabase_ai()
-
 # chat_model_starter()
-
 # chat_model_conversation_history()
-
 # chat_model_alternatives()
 # remembering_chat_conversation()
 # prompt_template_starter()
@@ -77,4 +76,5 @@ from Langchain.langchain_agent_101 import chain_agent
 # chain_real_wolrd_parallel()
 # chain_real_wolrd_considtional()
 # retrieval_augmented_gen()
-chain_agent()
+# chain_agent()
+basic_reflection()

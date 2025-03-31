@@ -25,7 +25,7 @@ Follow this format:
 Question: {input}
 SQLQuery: SELECT statement
 SQLResult: Result from the database
-Answer: Extract the value from SQLResult. Return "None" if no data.
+Answer: final answer from database query. Return "None" if no data.
 
 Use the following tables:
 {table_info}
